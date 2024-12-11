@@ -1,10 +1,25 @@
 import { defineComponent } from "vue";
+import { RouterLink, RouterView } from "vue-router";
 
-export const App2 = defineComponent({
+export const App = defineComponent({
   setup() {
     return () => (
-      <div>
-        Hi
-      </div>)
+      <>
+        <header>
+          导航
+          <ul>
+            <li>
+              <RouterLink to="/">Foo</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/about">Bar</RouterLink>
+            </li>
+          </ul>
+        </header>
+        <div>
+          <RouterView></RouterView>
+        </div>
+        <footer>页脚</footer>
+      </>)
   }
 })
