@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import { App } from './App'
 import { routes } from './config/routes'
 import { createRouter } from 'vue-router'
-import { history } from './sahred/history'
+import { history } from './shared/history'
 
 
 const router = createRouter({ history, routes })

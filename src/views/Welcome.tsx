@@ -1,10 +1,15 @@
 import { defineComponent } from 'vue';
 import { RouterView } from 'vue-router';
+import { s } from './Welcome.modual.scss'
 
 export const Welcome = defineComponent({
   setup: (props, context) => {
     return () => (
-      <div><RouterView /></div>
+      <div class={s.wrapper}>
+        <header>logo</header>
+        <main><RouterView /></main>
+        <footer>buttons</footer>
+      </div>
     )
   }
 })
