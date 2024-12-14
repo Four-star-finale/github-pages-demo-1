@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
-import s from './Welcome.module.scss'
+import s from './welcome.module.scss'
 
 export const Welcome = defineComponent({
   setup: (props, context) => {
@@ -8,7 +8,7 @@ export const Welcome = defineComponent({
       <div class={s.wrapper}>
         <header>logo</header>
         <main><RouterLink to='/Welcome/1'>First</RouterLink></main>
-        <footer></footer>
+        <footer>button</footer>
         <div>
           <RouterView></RouterView>
         </div>

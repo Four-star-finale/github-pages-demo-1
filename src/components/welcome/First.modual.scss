@@ -1,0 +1,10 @@
+.wrapper {
+  >.card {
+    background: var(--welvome-card-bg);
+  }
+
+  >.action {
+    display: flex;
+    justify-content: space-between;
+  }
+}
