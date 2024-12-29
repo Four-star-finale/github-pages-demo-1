@@ -1,0 +1,58 @@
+.wrapper {
+  height: 100%;
+  padding-bottom: var(--welcome-nav-gap);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    /* 保持文字颜色一致 */
+  }
+
+  >.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--welcome-card-bg);
+    align-items: center;
+    width: 88%;
+    height: 88%;
+    margin: 0 auto;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  >.actions {
+    position: fixed;
+    z-index: var(--z-index-bottom-nav);
+    background: var(--welcome-bg-end);
+    width: calc(100%); //使导航栏不对称的白边消失
+    height: var(--welcome-nav-height);
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    align-items: center;
+    color: var(--welcome-text);
+    font-weight: bolder;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-bottom: var(--welcome-nav-gap); //里面的文字距离底部的距离
+
+
+    >.fake {
+      visibility: hidden;
+    }
+  }
+
+  >.card .img {
+    display: flex;
+    padding-top: 35%;
+  }
+
+  >.card h1 {
+    padding-top: 5%;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+}

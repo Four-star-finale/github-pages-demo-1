@@ -1,20 +1,20 @@
 import { defineComponent } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
-import s from './welcome/First.modual.scss'
-
+import s from './welcome.module.scss';
+import { welcomelayout } from './welcomelayout';
+import pig from "../../assets/icons/piggy.svg"
 export const First = defineComponent({
-  setup: (props, context) => {
+  setup() {
     return () => (
-      <div class={s.wrapper}>
-        <card></card>
-        <action>
-          <RouterLink to='/Welcome/2'>下一页</RouterLink>
-        </action>
-        <div>
-          <RouterView></RouterView>
+      <>
+        <div class={s.wrapper}>
+          <div class={s.card}>
+            <img src={pig} class={s.img}></img>
+            <h1 >会挣钱<br></br>还要会省钱</h1>
+          </div>
         </div>
-      </div>
 
+      </ >
     )
   }
 })
