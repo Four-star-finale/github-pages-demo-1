@@ -1,5 +1,4 @@
 import { defineComponent } from 'vue';
-import { footerlayout } from './footerlayout';
 import { RouterLink } from 'vue-router';
 import s from './welcome.module.scss';
 export const SecondAction = defineComponent({
@@ -9,7 +8,7 @@ export const SecondAction = defineComponent({
         <div class={s.wrapper}>
           <div class={s.actions}>
             <RouterLink to='/' class={s.fake}><h2>跳过</h2></RouterLink>
-            <RouterLink to='/Welcome/2'><h2>下一页</h2></RouterLink>
+            <RouterLink to='/Welcome/3'><h2>下一页</h2></RouterLink>
             <RouterLink to='/'><h2>跳过</h2></RouterLink>
           </div>
         </div>
