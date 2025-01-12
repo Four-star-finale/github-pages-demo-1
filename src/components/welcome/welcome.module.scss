@@ -13,13 +13,24 @@
     flex-direction: column;
     background-color: var(--welcome-card-bg);
     align-items: center;
-    width: 88%;
-    height: 530px;
+    width: 90%;
+    height: 48vh;
     margin: 0 auto;
     border-radius: 5%;
+    padding-top: 35%;
     text-align: center;
     text-decoration: none;
     color: inherit;
+
+    >.img {
+      display: flex;
+    }
+
+    >.h1 {
+      padding-top: 5%;
+      font-weight: bold;
+      font-size: xx-large;
+    }
   }
 
   >.actions {
@@ -31,7 +42,7 @@
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0px 16px;
+    padding: 16px;
     align-items: center;
     color: var(--welcome-text);
     font-weight: bolder;
@@ -39,20 +50,14 @@
     box-sizing: border-box;
     padding-bottom: var(--welcome-nav-gap); //里面的文字距离底部的距离
 
-
     >.fake {
       visibility: hidden;
     }
   }
 
-  >.card .img {
-    display: flex;
-    padding-top: 35%;
-  }
 
-  >.card h1 {
-    padding-top: 5%;
-    font-weight: bold;
-    font-size: xx-large;
+  .IconSize {
+    width: 188px;
+    height: 158px;
   }
 }
