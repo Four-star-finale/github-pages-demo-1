@@ -1,0 +1,29 @@
+.mask {
+  z-index: var(--z-index-overlay_bg);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: calc(100% - var(--top-safe-area-height));
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: var(--top-safe-area-height);
+}
+
+.overlay {
+  z-index: calc(var(--z-index-overlay_bg) + 1);
+  background: var(--overlay-bg);
+  width: 296px;
+  height: calc(100% - var(--top-safe-area-height));
+  position: fixed;
+  left: 0;
+  top: var(--top-safe-area-height); //能够使新的页面宽度覆盖整个版面
+}
+
+.currentUser {
+  padding: 32px 16px;
+  background: #5C33BE;
+  color: var(--overlay-user-text);
+
+  >p {
+    color: #CEA1FF;
+  }
+}

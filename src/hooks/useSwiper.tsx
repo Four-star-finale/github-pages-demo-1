@@ -58,7 +58,6 @@ export const Swiper = () => {
           nextPage(); // 切换到下一页
         }
       }
-
       sliding.value = true; // 标记当前滑动事件已触发，防止重复滑动
     }
   };

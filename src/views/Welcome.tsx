@@ -1,11 +1,15 @@
 import { defineComponent, Transition, VNode } from 'vue';
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink, RouterView, RouteLocationNormalizedLoaded } from 'vue-router';
 import s from './welcome.module.scss'
 import logo from '../assets/icons/mangosteen.svg';
 import { Swiper } from '../hooks/useSwiper';
+import { onMounted } from "vue"
 
 export const Welcome = defineComponent({
   setup: (props, context) => {
+    onMounted(() => {
+      console.log('Welcome 组件已加载');
+    })
     const { currentPage, pages, onTouchStart, onTouchMove } = Swiper();
 
     return () => <div class={s.wrapper}>
