@@ -22,18 +22,24 @@ export const Overlay = defineComponent({
           <p>点击这里登录 </p>
         </section>
         <nav>
-          <ul>
+          <ul class={s.action_list}>
             <li>
-              <RouterLink to={"/statistics"}>
-                <Icon></Icon>
-                <span>1</span>
+              <RouterLink to={"/statistics"} class={s.action}>
+                <Icon name='charts' class={s.icon}></Icon>
+                <span>统计图标</span>
               </RouterLink>
             </li>
             <li>
-              <span>1</span>
+              <RouterLink to={"/statistics"} class={s.action}>
+                <Icon name='export' class={s.icon}></Icon>
+                <span>导出数据</span>
+              </RouterLink>
             </li>
             <li>
-              <span>1</span>
+              <RouterLink to={"/statistics"} class={s.action}>
+                <Icon name='notify' class={s.icon}></Icon>
+                <span>记账提醒</span>
+              </RouterLink>
             </li>
           </ul>
         </nav>

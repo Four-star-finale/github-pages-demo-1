@@ -11,7 +11,7 @@
 .overlay {
   z-index: calc(var(--z-index-overlay_bg) + 1);
   background: var(--overlay-bg);
-  width: 296px;
+  width: 16em;
   height: calc(100% - var(--top-safe-area-height));
   position: fixed;
   left: 0;
@@ -20,10 +20,32 @@
 
 .currentUser {
   padding: 32px 16px;
-  background: #5C33BE;
+  background: var(--overlay-user-bg);
   color: var(--overlay-user-text);
 
   >p {
     color: #CEA1FF;
+  }
+}
+
+
+.action {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 14px;
+  font-size: 20px;
+  text-decoration: none;
+
+  &_list {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+  }
+
+  >.icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 25px;
   }
 }
